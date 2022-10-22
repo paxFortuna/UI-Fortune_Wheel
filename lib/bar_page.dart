@@ -40,7 +40,7 @@ class _BarPageState extends State<BarPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            padding: const EdgeInsets.only(top: 50, bottom: 50),
+            padding: const EdgeInsets.only(top: 80, bottom: 50),
             child: ElevatedButton(
                 onPressed: () {
                   setState(() {
@@ -51,6 +51,7 @@ class _BarPageState extends State<BarPage> {
                 },
                 child: Text('Roll')),
           ),
+          const SizedBox(height: 50),
           Expanded(
             child: FortuneBar(
               selected: selected1.stream,
